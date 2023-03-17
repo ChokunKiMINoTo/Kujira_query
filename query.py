@@ -7,7 +7,7 @@ def query_kujira_contract_config(contract_address):
     query = {"config": {}}
     query_msg = base64.b64encode(json.dumps(query).encode("utf-8")).decode("utf-8")
     response = requests.get(
-        url=f" http://localhost:1317/cosmwasm/wasm/v1/contract/{contract_address}/smart/{query_msg}").json()[
+        url=f"http://127.0.0.1:1317/cosmwasm/wasm/v1/contract/{contract_address}/smart/{query_msg}").json()[
         "data"]
     return response
 
