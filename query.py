@@ -11,5 +11,5 @@ def query_kujira_contract_config(contract_address):
         "data"]
     return response
 
-ukuji=query_kujira_contract_config("kujira14hj2tavq8fpesdwxxcu44rty3hh90vhujrvcmstl4zr3txmfvw9sl4e867")
-pprint(ukuji)
+ukujicoin=query_kujira_contract_config("kujira14hj2tavq8fpesdwxxcu44rty3hh90vhujrvcmstl4zr3txmfvw9sl4e867")
+pprint(ukujicoin)
